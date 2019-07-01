@@ -1,7 +1,6 @@
 package com.fseiji.cursomc.resources;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
