@@ -1,5 +1,6 @@
 package com.fseiji.cursomc.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,10 @@ public class CategoriaService {
 	public Categoria insert(Categoria obj) {
 		obj.setId(null);
 		return repo.save(obj);
+	}
+
+	public List<Categoria> findAll() {
+		return repo.findAll();
 	}
 
 	public Categoria update(Categoria obj) {
